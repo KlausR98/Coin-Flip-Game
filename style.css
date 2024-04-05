@@ -71,3 +71,23 @@ body {
   background: #575de4;
   color: #fff;
 }
+
+@keyframes tail-spin {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes head-spin {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
