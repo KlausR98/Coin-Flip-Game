@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #575de4 50%, #fff 50%);
+}
+
+.container {
+  margin: 25vh auto;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  background: #fff;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.stats {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.stats p {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+
+.coin {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.buttons button {
+  border-color: #575de4;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#flip-button {
+  background: #575de4;
+  color: #fff;
+}
+
+#flip-button:hover {
+  background: #fff;
+  color: #575de4;
+}
+
+#reset-button {
+  background: #fff;
+  color: #575de4;
+}
+
+#reset-button:hover {
+  background: #575de4;
+  color: #fff;
+}
