@@ -29,10 +29,29 @@ body {
 }
 
 .coin {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.coin img {
+  width: 145px;
+}
+
+.heads,
+.tails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.tails {
+  transform: rotateX(180deg);
 }
 
 .buttons {
@@ -57,6 +76,12 @@ body {
   color: #fff;
 }
 
+#flip-button:disabled {
+  background-color: #e1e0ee;
+  color: #101020;
+  border-color: #e1e0ee;
+}
+
 #flip-button:hover {
   background: #fff;
   color: #575de4;
@@ -78,7 +103,7 @@ body {
   }
 
   to {
-    transform: rotateX(360deg);
+    transform: rotateX(1980deg);
   }
 }
 
@@ -88,6 +113,6 @@ body {
   }
 
   to {
-    transform: rotateX(360deg);
+    transform: rotateX(2160deg);
   }
 }
